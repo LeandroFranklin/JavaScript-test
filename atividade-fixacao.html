@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Atividade 1</title>
+        <meta charset="utf-8">
+
+        <script>
+            alert("Bem-vindo!");
+
+            var nome = prompt("Informe o nome: ");
+            var altura = parseFloat(prompt("Informe a altura em centímetro: "));
+            var peso = parseFloat(prompt("Informe o peso: "));
+
+            var alturaMetro = altura/100;
+
+            var massaCorporal = peso / (alturaMetro * alturaMetro);
+
+            if(massaCorporal < 16){
+                document.write(nome + " possui índice de massa corporal igual a " + massaCorporal + ": Baixo peso muito grave");
+            }
+
+            else if(massaCorporal >= 16 && massaCorporal <= 16.99){
+                document.write(nome + " possui índice de massa corporal igual a " + massaCorporal + ": Baixo peso grave");
+            }
+
+            else if(massaCorporal >= 16 && massaCorporal <= 16.99){
+                document.write(nome + " possui índice de massa corporal igual a " + massaCorporal + ": Baixo peso grave");
+            }
+
+            else if(massaCorporal >= 17 && massaCorporal <= 18.49){
+                document.write(nome + "possui índice de massa corporal igual a " + massaCorporal + ": Baixo peso");
+            }
+
+            else if(massaCorporal >= 18.50 && massaCorporal <= 24.99){
+                document.write(nome + " possui índice de massa corporal igual a " + massaCorporal + ": Peso normal");
+            }
+
+            else if(massaCorporal >= 25 && massaCorporal <= 29.99){
+                document.write(nome + " possui índice de massa corporal igual a " + massaCorporal + ": Sobrepeso");
+            }
+
+            else if(massaCorporal >= 30 && massaCorporal <= 34.99){
+                document.write(nome + " possui índice de massa corporal igual a " + massaCorporal + ": Obesidade grau I");
+            }
+
+            else if(massaCorporal >= 35 && massaCorporal <= 39.99){
+                document.write(nome + " possui índice de massa corporal igual a " + massaCorporal + ": Obesidade grau II");
+            }
+
+            else{
+                document.write(nome + " possui índice de massa corporal igual a " + massaCorporal + ": Obesidade grau III");
+            }
+
+
+        </script>
+
+    </head>
+    <body>
+        
+    </body>
+</html>
