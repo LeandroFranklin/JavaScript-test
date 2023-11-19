@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>JavaScript</title>
+        <meta charset="utf-8">
+
+        <script>
+
+            var n1 = parseInt(prompt("Digite o primeiro número: "));
+            var n2 = parseInt(prompt("Digite o segundo número: "));
+
+            var operacao = prompt("Subtração ou adição: ").toUpperCase();
+
+            function operar(num1, num2, operacao) {
+                if(operacao == "ADIÇÃO"){
+                    return num1 + num2;
+                }
+                else{
+                    return num1 - num2;
+                }
+            }
+
+            document.write("O resultado é: " + operar(n1, n2, operacao));
+
+        </script>
+
+    </head>
+    <body>
+        
+    </body>
+</html>
