@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <meta charset="utf-8">
+        <script>
+
+            function distribuirCaracter(){
+                var caracter = document.getElementById('entrada').value;
+            }
+
+        </script>
+    </head>
+    <body>
+        <input type="text"
+        placeholder="Digite um caracter aqui" 
+        onkeyup="distribuirCaracter()"
+        id="entrada">
+        
+        <hr>
+
+        <span>Letras:</span>
+        <input type="text" disabled="disabled">
+
+        <span>Números:</span>
+        <input type="text" disabled="disabled">
+    </body>
+</html>
