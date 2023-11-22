@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>JavaScript</title>
+        <meta charset="utf-8">
+
+        <script>
+
+            function mudarEstilo(){
+                document.getElementById("local").style.background = "yellow";
+            }
+
+            function estiloAlternado(){
+                var tamanho = document.getElementById('local').value;
+
+                if(tamanho.length < 3){
+                    document.getElementById("local").style.background = "red"
+                }
+                else{
+                    document.getElementById("local").style.background = "green"
+                }
+            }
+
+        </script>
+
+    </head>
+    <body>
+        
+        <input type="text" onclick="mudarEstilo()" onblur="estiloAlternado()" id="local">
+
+    </body>
+</html>
