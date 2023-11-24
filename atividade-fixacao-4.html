@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>JavaScript</title>
+        <meta charset="utf-8">
+        <script>
+
+            var objetos = [];
+
+
+            function adicionar(){
+
+                var indice = objetos.indexOf(document.getElementById("visor").value);
+
+                if(document.getElementById("visor").value != "" && indice == -1){
+
+                    objetos.push(document.getElementById('visor').value);
+
+                    document.getElementById('visor').value = "";
+
+                    console.log(objetos);
+
+                }
+
+                else if(indice != -1){
+                    alert("Objeto já foi adicionado");
+                    document.getElementById("visor").value = "";
+                }
+
+                else{
+                    alert('Informe um valor válido');
+                }
+    
+            }
+
+            function ordenar(){
+                console.log(objetos.sort());
+            }
+
+
+        </script>
+    </head>
+    <body>
+        
+        <input type="text" id="visor">
+        <button onclick="adicionar()" id="adicionar">Adicionar</button>
+        <button onclick="ordenar()" id="ordenar">Ordenar</button>
+
+    </body>
+</html>
