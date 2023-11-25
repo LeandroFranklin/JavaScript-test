@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>JavaScript</title>
+    <meta charset="utf-8">
+    <script>
+
+        var funcionarios = Array("Leandro", "Márcio", "Laura", "Jorge");
+
+        funcionarios.forEach(function(v, i, a){
+
+        console.log(i);
+
+        if(v == "Jorge"){
+            a[i] = "Novo valor";
+        }
+            
+        });
+
+        console.log(funcionarios);
+
+    </script>
+    <body>
+        
+    </body>
+</head>
